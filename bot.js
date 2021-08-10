@@ -1,8 +1,6 @@
 /* Copyright (C) 2020 Yusuf Usta.
-
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
 WhatsAsena - Yusuf Usta
 */
 
@@ -307,7 +305,6 @@ async function whatsAsena () {
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
-
 ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
     });
     conn.on('credentials-updated', async () => {
@@ -396,7 +393,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, '\n*Pikachu Working as Public!😎*\n', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '\n*WizardWorking as Public!😎*\n', MessageType.text);
                 }               
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -451,7 +448,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, '\n*Pikachu  Working as Private!😎*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as private. To change it, use* _.setvar WORK_TYPE:public_\n\n*Thanks for using WhatsAsena 💌*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '\n*Wizard Working as Private!😎*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as private. To change it, use* _.setvar WORK_TYPE:public_\n\n*Thanks for using WhatsAsena 💌*', MessageType.text);
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -811,7 +808,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                             }
                             else {
                                 await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [Pikachu] --*' + 
-                                    '\n*Pikachu an error has occurred!*'+
+                                    '\n*Wizardan error has occurred!*'+
                                     '\n*This error log may include your number or the number of an opponent. Please be careful with it!*' +
                                     '\n*You can write to our Telegram group for help.*' +
                                     '\n*Aslo you can join our support group:* https://chat.whatsapp.com/FsDjV2uRKce4wgMpAtYwyf' +
